@@ -8,6 +8,20 @@ import {
   StatusBar,
 } from 'react-native';
 
+import { types } from 'mobx-state-tree';
+
+const Todo = types.model({
+  name: "",
+  done: false
+});
+
+const User = types.model({
+  name: ""
+});
+
+// REFERENCE: https://mobx-state-tree.js.org/intro/getting-started
+
+
 class App extends React.Component {
   constructor(props) {
     super(props);
